@@ -1,3 +1,6 @@
+"""
+    내가 팔로우 하지만 나를 팔로우하지 않는 계정
+"""
 import json
 
 following_path = 'following.json'
@@ -19,7 +22,7 @@ for item in data:
         if json.dumps(profile_info['value']) in tracklist:
              tracklist.remove(json.dumps(profile_info['value']));
         # print(json.dumps(profile_info['value'], indent=4));
-file_name = "track.txt"
+file_name = "unfollowedtrack.txt"
 with open(file_name, 'w') as file:
     for data in tracklist:
         file.write(data + '\n')
