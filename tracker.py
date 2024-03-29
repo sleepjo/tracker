@@ -1,7 +1,7 @@
 import json
 
-following_path = 'insta-unfollow-tracker/following.json'
-follower_path = 'insta-unfollow-tracker/followers.json';
+following_path = 'following.json'
+follower_path = 'followers.json';
 with open(following_path, 'r') as fp:
     data = json.load(fp)
 
